@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Webpage</title>
+        <link rel="stylesheet" href="./external.css" />
+        <style>
+            /* syntax
+
+            selector {
+                property: value;
+            }
+
+            */
+
+            /* id selector - (#) */
+            #para {
+                color: rgb(234, 6, 6);
+            }
+
+            /* class selector - (.) */
+            .textbox {
+                border: 2px solid greenyellow;
+            }
+
+            /* tag selector - (tagname) */
+            input {
+                border: 5px solid black;
+            }
+
+            /* grouping selector - (,) */
+            table, td, th {
+                border: 2px solid red;
+            }
+
+            /* universal selector - (*) */
+            header * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            /* attribute selector - (tagname[attribute="value"]) */
+            img[src="./images/logo.png"] {
+                height: 70px;
+            }
+
+
+            #john, #john * {
+                background-color: white;
+                border: 3px solid red;
+                margin: 10px;
+                padding: 10px;
+                display: block;
+            }
+            
+            /* relational selector */
+                /* descendent selector - (<space>) */
+                header a {
+                    color: white;
+                }
+
+                #steve div {
+                    background-color: cyan;
+                    border: 3px solid green;
+                }
+                /* child selector - (>) */
+                #rohan>div {
+                    background-color: yellow;
+                    border: 3px solid purple;
+                }
+
+                /* adjacent selector - (+) */
+                span#lee + span {
+                    background-color: rgb(244, 244, 21);
+                    border: 3px solid pink;
+                }
+
+                /* sibling selector - (~) */
+                span#ella ~ span {
+                    background-color: rgb(244, 244, 21);
+                    border: 3px solid pink;
+                }
+
+            a {
+                display: inline;
+                border: 2px solid black;
+                padding: 10px;
+            }
+        </style>
+        <script src="./external.js"></script>
+    </head>
+    <body>
+
+        <div id="john">
+            <div id="steve">
+                <div id="lee"></div>
+                <div id="bob"></div>
+                <div id="ella"></div>
+            </div>
+            <div id="mike">
+                <span id="lee"></span>
+                <span id="bob"></span>
+                <span id="ella"></span>
+                <span id="tom"></span>
+                <span id="sam"></span>
+            </div>
+            <div id="rohan">
+                <div id="sam"></div>
+                <div id="emma">
+                    <div id="tom"></div>
+                    <div id="tom"></div>
+                </div>
+            </div>
+        </div>
+
+        
+        <p id="para">This is a paragraph</p>
+        <!-- basic tags -->
+        <p>This is HTML          tutorial</p>
+        <p>HEllo World</p>
+
+        <div>This is a div tag</div>
+        <div>This is a div tag</div>
+
+        <span>This is span tag</span>
+        <br>
+        <span>This is span tag</span>
+
+        <pre>This is        pre        
+
+
+            tag
+
+
+            sadasdsad
+                sdsaddsa
+        </pre>
+
+        <hr>
+        
+        <!-- multimedia tags -->
+        <img src="https://onlinejpgtools.com/images/examples-onlinejpgtools/orange-flower.jpg" height="300px" alt="flower" />
+        <audio controls>
+            <source src="https://file-examples.com/storage/fec36b918d65009119ed030/2017/11/file_example_MP3_700KB.mp3" />
+        </audio>
+        <video controls  height="200px">
+            <source src="https://file-examples.com/storage/fec36b918d65009119ed030/2017/04/file_example_MP4_480_1_5MG.mp4" />
+        </video>
+        <a href="https://www.google.com">Google</a>
+        <embed width="560" height="315" src="https://www.youtube.com/embed/21X5lGlDOfg?si=3jlhPD2bv8xJE1Uu" />
+        <iframe width="560" height="315" src="https://ktflash.gitbooks.io/ceh_v9/content/62_trojan_concepts.html"></iframe>
+
+        <!-- semantic tags -->
+        <header></header>
+        <nav></nav>
+        <main>
+            <section></section>
+        </main>
+        <aside></aside>
+        <time></time>
+        <footer></footer>
+
+        <div></div>
+
+        <!-- formatting tags -->
+        <b>Hello. </b><i>This is </i><u>HTML</u>   
+        <br>
+        <strong>Hello. </strong><em>This is </em><ins>HTML</ins>
+
+        <marquee direction="up" height="200px"><center>HTML stands for <mark>Hypertext <del>Marking</del><ins>Markup</ins> Language</mark></center></marquee>
+
+        2<sup>2</sup>
+        <br>
+        <sub>2</sub>√100
+
+        <!-- list tags -->
+        <ol type="A">
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+            <li>List Item 6</li>
+        </ol>
+
+        <ul type="square">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+
+        <dl>
+            <dt>File:Red Kitten 01.jpg</dt>
+            <dd>It took me a long time to get a good shot of one of our four cute kittens. They are always running around and playing with each other and haven't any time for a photo-shooting. But I catched the red one when it laid down for a rest.
+
+                Hope I get some photos of the other three too.
+                Date	Taken on 30 June 2007, 13:01
+                Source	
+                red kitten 01
+                
+                Uploaded by Kaldari
+                Author	Mathias Erhart from Nenzing, Austria</dd>
+        </dl>
+
+        <!-- heading tags -->
+        <h1>Heading Level 1</h1>
+        <h2>Heading Level 2</h2>
+        <h3>Heading Level 3</h3>
+        <h4>Heading Level 4</h4>
+        <h5>Heading Level 5</h5>
+        <h6>Heading Level 6</h6>
+
+        <!-- table tags -->
+        <table border="2px">
+            <colgroup>
+                <col span="2">
+                <col span="" style="background-color: aqua;"/>
+                <col span="2" style="background-color:azure"/>
+            </colgroup>
+            <tr>
+                <th colspan="2">Student Name</th>
+                <th rowspan="2">Address</th>
+                <th rowspan="2">Email Id</th>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+               
+            </tr>
+            <tr>
+                <td>Akash</td>
+                <td>Soni</td>
+                <td>Bangalore</td>
+                <td>akash@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Akash</td>
+                <td>Soni</td>
+                <td>Bangalore</td>
+                <td>akash@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Akash</td>
+                <td>Soni</td>
+                <td>Bangalore</td>
+                <td>akash@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Akash</td>
+                <td>Soni</td>
+                <td>Bangalore</td>
+                <td>akash@gmail.com</td>
+            </tr>
+        </table>
+
+        <!-- form tags -->
+        <form method="post" action="./search.php">
+            <label>Query:</label>
+            <input type="text" name="query" />
+            <textarea rows="10" cols="50"></textarea>
+            <button type="reset">Clear</button>
+            <input type="submit" value="SUBMIT"/>
+        </form>
+
+        <br><br>
+        <form>
+            <fieldset>
+                <legend>HTML Input Tags:</legend>
+                
+                <!--text fields-->
+                <input class="textbox" type="text" name="name_inp" id="name_txt" class="textbox" value="Hello" required/>
+                <input class="textbox" type="url" placeholder="Enter a URL"/>
+                <input class="textbox" type="search" />
+                <input class="textbox" type="password" />
+                <input class="textbox" id="number-input" type="number" />
+                <input class="textbox" id="email-input" type="email" />
+                <textarea class="textbox" rows="10" cols="50"></textarea><br><br>
+    
+                <!-- date/time -->
+                <input id="date-picker" type="date" name="date">
+                <input type="datetime-local">
+                <input type="datetime" >
+                <input type="month">
+                <input type="week">
+                <input type="time">
+                <br><br>
+    
+                <!--check box-->
+                <input name="chk1" type="checkbox"><label>Option 1</label>
+                <input name="chk2" type="checkbox"><label>Option 2</label>
+    
+                <!-- radiobtn -->
+                <input name="gender" type="radio" value="Male"><label>Male</label>
+                <input name="gender" type="radio" value="female"><label>Female</label>
+                <input name="gender" type="radio" value="others"><label>Others</label>
+    
+                <!-- selectors -->
+                <input type="color" name="color">
+                <input type="file">
+                <input type="image" src="list.png" alt="Submit" width="48" height="48">
+                <input type="range" name="range" min="0" max="10">
+    
+                <input type="button" value="CLICK" />
+                <input type="submit" value="SUBMIT"/>
+                <input type="reset" />
+    
+                <button type="submit">Submit LOGIN</button>
+                <button type="menu">MENU BUTTON</button>
+                <button type="button">Button</button>
+                <button type="reset">Reset</button>
+            </fieldset>
+        </form>
+        
+    </body>
+    <div style="height: 500px;"></div>
+</html>
+
+
+
+
