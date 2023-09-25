@@ -1,0 +1,59 @@
+@font-face {
+    font-family: MuktaRegular;
+    src: url(./assets/Mukta-Regular.ttf);
+}
+@font-face {
+    font-family: Croissant;
+    src: url(./assets/CroissantOne-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family:MuktaRegular;
+}
+body {
+    background-color: rgb(255, 253, 240);
+}
+#header-1 {
+    background-color: #222; 
+    text-align: right;
+}
+#header-1 > a {
+    color: white;
+    text-decoration:none;
+    margin-right: 2.5vw;
+    font-size: 15px;
+}
+#dropdown {
+    display: inline-block;
+}
+#dropdown-btn {
+    border: 0;
+    background-color: rgb(0, 162, 0);
+    color: white;
+    padding: 8px 25px;
+    font-size: 18px;
+    font-family: Croissant;
+}
+#header-1 #dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+}
+#dropdown-content a {
+    display: block;
+    background-color: #d1d1d1;
+    color: #333;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+#dropdown-content a:hover {
+    background-color: #aeaeae;
+}
+#dropdown-btn:hover {
+    background-color:rgb(0, 101, 0);
+    cursor:pointer;
+} 
+#dropdown:hover #dropdown-content {
+    display: block;
+}
